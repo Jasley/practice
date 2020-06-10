@@ -31,16 +31,12 @@ pipeline {
                                 }
                         }
                         stage('Integration test') {
-                        agent {
-                                any {
-                                        echo 'Almost done...'
-                                        }
-			}
-				steps {
+                  		steps {
 					echo 'Running the integration test..'
 				}
+				
                                
-			}  }
+		}  }
         }
     }
 }
