@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, this is Zulaikha from edureka'
+                        echo 'Hi, test tec'
 			
                 }
         }
@@ -32,9 +32,8 @@ pipeline {
                         }
                         stage('Integration test') {
                         agent {
-                                docker {
-                                        reuseNode false
-					image 'pedantic_noyce'
+                                any {
+                                        echo 'Almost done...'
                                         }
 			}
 				steps {
